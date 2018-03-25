@@ -1,0 +1,33 @@
+simulation s
+role swarm
+    rule separation
+            close_drones=find_neighbours_in_radius(30)
+            dx=sub_all_x(for d in close_drones: self.x - d.x)
+            dx=dx/close_drones.length
+            dy=sub_all_y(for d in close_drones: self.y - d.y)
+            dy=dy/close_drones.length
+            sep_vector=[dx,dy]
+            result sep_vector
+   
+    rule cohesion
+            close_drones=find_neighbours_in_radius(30)
+            sx=sum_all_x(for d in close_drones: self.x + d.x)
+            sx=sx/close_drones.length
+            sy=sum_all_y(for d in close_drones: self.y + d.y)
+            sy=sy/close_drones.length
+            cohesion_vec=[sx-position.x,sy-position.y]
+            result cohesion_vec
+           
+
+    rule velavg
+            close_drones=find_neighbours_in_radius(30)
+            velx=sum_all_vel_x(for d in close_drones: d.vel_x)
+            velx=velx/close_drones.length
+            vely=sum_all_vel_x(for d in close_drones: d.vel_y)
+            vely=vely/close_drones.length
+            vel_vector=[velx,vely]
+            result vel_vector
+           
+    behavior flocking
+            flocking_vec=separation()+cohesion()+velavg()
+            set_velocity flocking_vec
