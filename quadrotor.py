@@ -13,6 +13,8 @@ class quadrotor:
     scale_pos = None
     next_id = 0
     energy_correction = 1 # energy normalization
+    temperature_sensor=False
+    water_cargo=False
     
 
     def __init__(self, tag, m, l, J, CDl, CDr, kt, km, kw, att, \

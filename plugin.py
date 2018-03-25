@@ -28,6 +28,20 @@ def get_drone_velocity(drone,percentage):
 		print "I am returning false"
 		return numpy.array([0.0,0.0])
 
+def return_all_drones_temp(drone_list):
+	temp=[]
+	for d in drone_list:
+		if d.temperature_sensor==True:
+			temp.append(d)
+	return temp	
+			
+
+def return_all_drones_water(drone_list):
+	water=[]
+	for d in drone_list:
+		if d.water_cargo==True:
+			water.append(d)
+	return water
 	
 		
 	

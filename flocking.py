@@ -153,36 +153,42 @@ for t in time:
     # Simulation
     
     q1.group.syncronize(q1,quad_list,radius)
+    q1.temperature_sensor=True
     rules.flocking(q1)
     q1.step(dt)
     q1.same_position(quad_list)
     
     
     q2.group.syncronize(q2,quad_list,radius)
+    q2.temperature_sensor=True
     rules.flocking(q2)
     q2.step(dt)
     q2.same_position(quad_list)
 
     
     q3.group.syncronize(q3,quad_list,radius)
+    q3.temperature_sensor=True
     rules.flocking(q3)
     q3.step(dt)
     q3.same_position(quad_list)
 
   
     q4.group.syncronize(q4,quad_list,radius)
+    q4.water_cargo=True
     rules.flocking(q4)
     q4.step(dt)
     q4.same_position(quad_list)
 
     
     q5.group.syncronize(q5,quad_list,radius)
+    q5.water_cargo=True
     rules.flocking(q5)
     q5.step(dt)
     q5.same_position(quad_list)
 
     
     q6.group.syncronize(q6,quad_list,radius)
+    q6.water_cargo=True
     rules.flocking(q6)
     q6.step(dt)
     q6.same_position(quad_list)
