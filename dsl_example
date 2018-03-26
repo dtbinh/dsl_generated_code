@@ -1,5 +1,5 @@
 simulation s
-role swarm
+	role swarm
     rule separation
             close_drones=find_neighbours_in_radius(30)
             dx=sub_all_x(for d in close_drones: self.x - d.x)
@@ -31,3 +31,39 @@ role swarm
     behavior flocking
             flocking_vec=separation()+cohesion()+velavg()
             set_velocity flocking_vec
+	
+	role fire_locator move flocking
+		condition temperature_sensor=True
+		behavior find_fire
+			if temperature_sensor()>100:
+				fire=self.position:
+		behavior propagate_fire_position -args fire
+			propagate fire to_role fire_fighters 
+		behavior tend_away_from_fire -args fire
+			target=self.position - fire
+			target=-1*target
+        	set_velocity target
+	
+	
+	role fire_fighters	move flocking  
+        condition water_cargo=True
+        behavior go_to_fire_location -args fire 
+        	target=self.position - fire
+        	set_velocity target       	 
+        behavior turn_down_fire
+        	
+    
+    ensemble fire_handler
+    	share estinguish_fire
+    	requires fire_locator fire_fighters
+        
+    sequence estinguish_fire
+		state s1 role fire_locator action find_fire;
+		state s2 role fire_locator action propagate_fire_position;
+		state s3 role fire_fighters action go_to_fire_location;
+		state s4 role fire_locator action tend_away_from_fire;
+		state s5 role fire_fighters action turn_down_fire;
+	
+
+
+            

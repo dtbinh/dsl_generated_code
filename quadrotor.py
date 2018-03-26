@@ -2,6 +2,8 @@ import numpy as np
 from scipy import linalg as la
 import math
 from group import Group
+from state_machine import StateMachine 
+from state import State
 class quadrotor:
     density = 0.0005
     mass = 0.01
@@ -15,11 +17,12 @@ class quadrotor:
     energy_correction = 1 # energy normalization
     temperature_sensor=False
     water_cargo=False
-    
+    role=None
 
     def __init__(self, tag, m, l, J, CDl, CDr, kt, km, kw, att, \
             pqr, xyz, v_ned, w):
         # physical constants
+	state_m=StateMachine(self)
 	self.group=Group()
         self.tag = tag
         self.m = m   # [Kg]
@@ -31,7 +34,6 @@ class quadrotor:
         self.kt = kt    # Propeller thrust [N s^2]
         self.km = km    # Propeller moment [N m s^2]
         self.kw = kw    # Motor transient [1/s]
-	
 
         # Configuration of the propellers
         self.w_to_Tlmn = np.array([[   -kt,  -kt,  -kt,   -kt],\
@@ -91,6 +93,8 @@ class quadrotor:
         self.xi_CD = 0
 
     ### GNC Functions ###
+    def set_role(role):
+	self.role=role
     def control_att(self):
         # Attitude controller Lyapunov approach
         ephi = self.att[0] - self.att_d[0]

@@ -1,12 +1,11 @@
-from state_machine import StateMachine 
+#from statte_machine import StateMachine 
 from state import State
 
-def my_print(st):
-	print st
+def my_print():
+	 print "hola"
 def main():
-    state=State("one","two","three")
-    statemachine=StateMachine(state)
-    statemachine.build()
+    state=State("ciao","hola",my_print,"current")
+    state.execute()
     
 
 if __name__ == "__main__":

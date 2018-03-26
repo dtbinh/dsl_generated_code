@@ -4,54 +4,53 @@ import numpy
 import math
 #import temperature_function as temp
 #import plugin
-
+	
 def sub_all_x(close_drones, current):
-		dx=0
-		for other in close_drones:
-			dx-=current.xyz[0]-other.xyz[0]
-		return dx
-					
+	dx=0
+	for other in close_drones:
+	dx-=current.xyz[0]-other.xyz[0]
+	return dx
+						
 def sub_all_y(close_drones, current):
-		dy=0
-		for other in close_drones:
-			dy-=current.xyz[1]-other.xyz[1]
-		return dy
+	dy=0
+	for other in close_drones:
+	dy-=current.xyz[1]-other.xyz[1]
+	return dy
 def sum_all_x(close_drones, current):
-		dx=0
-		for other in close_drones:
-			dx+=other.xyz[0]
-		return dx
-					
+	dx=0
+	for other in close_drones:
+	dx+=other.xyz[0]
+	return dx
+						
 def sum_all_y(close_drones, current):
-		dy=0
-		for other in close_drones:
-			dy+=other.xyz[1]
-		return dy
-	
-def sum_all_vel_x(close_drones, current):
-		dx=0
-		for other in close_drones:
-			dx+=other.v_ned_d[0]
-		return dx
-					
-def sum_all_vel_y(close_drones, current):
-		dy=0
-		for other in close_drones:
-			dy+=other.v_ned_d[1]
-		return dy
-	
-def find_neighbours_in_radius(current,radius):
-		agents=current.group.neibourgh_list
-		neibourgh=[]
-		for it in agents:
-			if euclidean_distance(it.xyz,current.xyz)<=radius:
-				neibourgh.append(it)
-		return neibourgh
-	
-def euclidean_distance(a,b):
-		distance=math.sqrt(pow((a[0] - b[0]), 2) + pow((a[1] - b[1]), 2))
-		return distance
+	dy=0
+	for other in close_drones:
+	dy+=other.xyz[1]
+	return dy
 		
+def sum_all_vel_x(close_drones, current):
+	dx=0
+	for other in close_drones:
+	dx+=other.v_ned_d[0]
+	return dx
+						
+def sum_all_vel_y(close_drones, current):
+	dy=0
+	for other in close_drones:
+	dy+=other.v_ned_d[1]
+	return dy
+		
+def find_neighbours_in_radius(current,radius):
+	agents=current.group.neibourgh_list
+	neibourgh=[]
+	for it in agents:
+	if euclidean_distance(it.xyz,current.xyz)<=radius:
+	neibourgh.append(it)
+	return neibourgh
+		
+def euclidean_distance(a,b):
+	distance=math.sqrt(pow((a[0] - b[0]), 2) + pow((a[1] - b[1]), 2))
+	return distance
 
 def separation (current):
 	alt_d=8
@@ -101,6 +100,27 @@ def velavg (current):
 	vel_vector.normalize()
 	return 	vel_vector.return_as_vector()
 def flocking (current):
+	print flocking 
 	flocking_vec=((separation(current)+cohesion(current))+velavg(current))
 	alt_d=8
 	current.set_v_2D_alt_lya(flocking_vec,-alt_d)
+def find_fire (current):
+	print find_fire 
+	if not(current.temperature_sensor==True):
+			return
+def propagate_fire_position (current):
+	print propagate_fire_position 
+	if not(current.temperature_sensor==True):
+			return
+def tend_away_from_fire (current):
+	print tend_away_from_fire 
+	if not(current.temperature_sensor==True):
+			return
+def go_to_fire_location (current):
+	print go_to_fire_location 
+	if not(current.water_cargo==True):
+			return
+def turn_down_fire (current):
+	print turn_down_fire 
+	if not(current.water_cargo==True):
+			return
