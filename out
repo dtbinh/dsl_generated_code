@@ -1,0 +1,1918 @@
+fire_fighters Printing the current role 1
+fire_fighters Printing the current role 2
+fire_fighters Printing the current role 3
+fire_locator Printing the current role 4
+fire_locator Printing the current role 5
+fire_locator Printing the current role 6
+synchronizing........... 1
+synchronizing........... 2
+synchronizing........... 3
+synchronizing........... 4
+0 same state as me
+I am executing a state... 4
+4 I am in state current
+synchronizing........... 5
+0 same state as me
+I am executing a state... 5
+5 I am in state current
+synchronizing........... 6
+0 same state as me
+I am executing a state... 6
+6 I am in state current
+fire_fighters Printing the current role 1
+fire_fighters Printing the current role 2
+fire_fighters Printing the current role 3
+fire_locator Printing the current role 4
+fire_locator Printing the current role 5
+fire_locator Printing the current role 6
+synchronizing........... 1
+synchronizing........... 2
+synchronizing........... 3
+synchronizing........... 4
+0 same state as me
+I am executing a state... 4
+4 I am in state current
+synchronizing........... 5
+0 same state as me
+I am executing a state... 5
+5 I am in state current
+synchronizing........... 6
+0 same state as me
+I am executing a state... 6
+6 I am in state current
+fire_fighters Printing the current role 1
+fire_fighters Printing the current role 2
+fire_fighters Printing the current role 3
+fire_locator Printing the current role 4
+fire_locator Printing the current role 5
+fire_locator Printing the current role 6
+synchronizing........... 1
+synchronizing........... 2
+synchronizing........... 3
+synchronizing........... 4
+0 same state as me
+I am executing a state... 4
+4 I am in state current
+synchronizing........... 5
+0 same state as me
+I am executing a state... 5
+5 I am in state current
+synchronizing........... 6
+0 same state as me
+I am executing a state... 6
+6 I am in state current
+s1 1 False fire_fighters
+s1 2 False fire_fighters
+s1 3 False fire_fighters
+s1 4 False fire_locator
+s1 5 False fire_locator
+s1 6 False fire_locator
+synchronizing........... 1
+synchronizing........... 2
+synchronizing........... 3
+synchronizing........... 4
+0 same state as me
+I am executing a state... 4
+4 I am in state current
+synchronizing........... 5
+0 same state as me
+I am executing a state... 5
+5 I am in state current
+synchronizing........... 6
+0 same state as me
+I am executing a state... 6
+6 I am in state current
+s1 1 False fire_fighters
+s1 2 False fire_fighters
+s1 3 False fire_fighters
+s1 4 False fire_locator
+s1 5 False fire_locator
+s1 6 False fire_locator
+synchronizing........... 1
+synchronizing........... 2
+synchronizing........... 3
+synchronizing........... 4
+0 same state as me
+I am executing a state... 4
+4 I am in state current
+synchronizing........... 5
+0 same state as me
+I am executing a state... 5
+5 I am in state current
+synchronizing........... 6
+0 same state as me
+I am executing a state... 6
+6 I am in state current
+s1 1 False fire_fighters
+s1 2 False fire_fighters
+s1 3 False fire_fighters
+s1 4 False fire_locator
+s1 5 False fire_locator
+s1 6 False fire_locator
+synchronizing........... 1
+synchronizing........... 2
+synchronizing........... 3
+synchronizing........... 4
+0 same state as me
+I am executing a state... 4
+4 I am in state current
+synchronizing........... 5
+0 same state as me
+I am executing a state... 5
+5 I am in state current
+synchronizing........... 6
+0 same state as me
+I am executing a state... 6
+6 I am in state current
+s1 1 False fire_fighters
+s1 2 False fire_fighters
+s1 3 False fire_fighters
+s1 4 False fire_locator
+s1 5 False fire_locator
+s1 6 False fire_locator
+fire_fighters Printing the current role 1
+fire_fighters Printing the current role 2
+fire_fighters Printing the current role 3
+fire_locator Printing the current role 4
+fire_locator Printing the current role 5
+fire_locator Printing the current role 6
+synchronizing........... 1
+synchronizing........... 2
+synchronizing........... 3
+synchronizing........... 4
+0 same state as me
+I am executing a state... 4
+4 I am in state current
+synchronizing........... 5
+0 same state as me
+I am executing a state... 5
+The result was true True s1 5
+5 I am in state current
+I am in if inside check
+I am increasing the counter 1
+synchronizing........... 6
+0 same state as me
+I am executing a state... 6
+6 I am in state current
+I am in if inside check
+I am increasing the counter 1
+s1 1 False fire_fighters
+s1 2 False fire_fighters
+s1 3 False fire_fighters
+s1 4 False fire_locator
+s1 5 True fire_locator
+s1 6 False fire_locator
+synchronizing........... 1
+I am increasing the counter 0
+synchronizing........... 2
+I am increasing the counter 0
+synchronizing........... 3
+I am increasing the counter 0
+synchronizing........... 4
+0 same state as me
+I am executing a state... 4
+4 I am in state current
+I am in if inside check
+I am increasing the counter 1
+synchronizing........... 5
+1 same state as me
+I am executing a state... 5
+5 I am in state current
+I am in if inside check
+I am increasing the counter 1
+synchronizing........... 6
+1 same state as me
+I am executing a state... 6
+6 I am in state current
+I am in if inside check
+I am increasing the counter 1
+s1 1 False fire_fighters
+s1 2 False fire_fighters
+s1 3 False fire_fighters
+s1 4 False fire_locator
+s1 5 True fire_locator
+s1 6 False fire_locator
+fire_fighters Printing the current role 1
+fire_fighters Printing the current role 2
+fire_fighters Printing the current role 3
+fire_locator Printing the current role 4
+fire_locator Printing the current role 5
+fire_locator Printing the current role 6
+synchronizing........... 1
+synchronizing........... 2
+synchronizing........... 3
+synchronizing........... 4
+0 same state as me
+I am executing a state... 4
+4 I am in state current
+synchronizing........... 5
+0 same state as me
+I am executing a state... 5
+5 I am in state current
+synchronizing........... 6
+0 same state as me
+I am executing a state... 6
+6 I am in state current
+s1 1 False fire_fighters
+s1 2 False fire_fighters
+s1 3 False fire_fighters
+s1 4 False fire_locator
+s1 5 False fire_locator
+s1 6 False fire_locator
+synchronizing........... 1
+synchronizing........... 2
+synchronizing........... 3
+synchronizing........... 4
+0 same state as me
+I am executing a state... 4
+4 I am in state current
+synchronizing........... 5
+0 same state as me
+I am executing a state... 5
+The result was true True s1 5
+5 I am in state current
+I am in if inside check
+I am increasing the counter 1
+synchronizing........... 6
+0 same state as me
+I am executing a state... 6
+6 I am in state current
+I am in if inside check
+I am increasing the counter 1
+s1 1 False fire_fighters
+s1 2 False fire_fighters
+s1 3 False fire_fighters
+s1 4 False fire_locator
+s1 5 True fire_locator
+s1 6 False fire_locator
+synchronizing........... 1
+I am increasing the counter 0
+synchronizing........... 2
+I am increasing the counter 0
+synchronizing........... 3
+I am increasing the counter 0
+synchronizing........... 4
+0 same state as me
+I am executing a state... 4
+4 I am in state current
+I am in if inside check
+I am increasing the counter 1
+synchronizing........... 5
+1 same state as me
+I am executing a state... 5
+5 I am in state current
+I am in if inside check
+I am increasing the counter 1
+synchronizing........... 6
+1 same state as me
+I am executing a state... 6
+6 I am in state current
+I am in if inside check
+I am increasing the counter 1
+s1 1 False fire_fighters
+s1 2 False fire_fighters
+s1 3 False fire_fighters
+s1 4 False fire_locator
+s1 5 True fire_locator
+s1 6 False fire_locator
+synchronizing........... 1
+I am increasing the counter 0
+synchronizing........... 2
+I am increasing the counter 0
+synchronizing........... 3
+I am increasing the counter 0
+synchronizing........... 4
+1 same state as me
+I am executing a state... 4
+4 I am in state current
+I am in if inside check
+I am increasing the counter 1
+synchronizing........... 5
+1 same state as me
+I am executing a state... 5
+5 I am in state current
+I am in if inside check
+I am increasing the counter 1
+synchronizing........... 6
+1 same state as me
+I am executing a state... 6
+6 I am in state current
+I am in if inside check
+I am increasing the counter 1
+s1 1 False fire_fighters
+s1 2 False fire_fighters
+s1 3 False fire_fighters
+s1 4 False fire_locator
+s1 5 True fire_locator
+s1 6 False fire_locator
+synchronizing........... 1
+I am increasing the counter 0
+synchronizing........... 2
+I am increasing the counter 0
+synchronizing........... 3
+I am increasing the counter 0
+synchronizing........... 4
+1 same state as me
+I am executing a state... 4
+The result was true True s1 4
+4 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 5
+1 same state as me
+I am executing a state... 5
+5 I am in state current
+I am in if inside check
+I am increasing the counter 1
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 6
+1 same state as me
+I am executing a state... 6
+6 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+s1 1 False fire_fighters
+s1 2 False fire_fighters
+s1 3 False fire_fighters
+s1 4 True fire_locator
+s1 5 True fire_locator
+s1 6 False fire_locator
+synchronizing........... 1
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 2
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 3
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 4
+2 same state as me
+I am executing a state... 4
+4 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 5
+2 same state as me
+I am executing a state... 5
+5 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 6
+2 same state as me
+I am executing a state... 6
+6 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+s1 1 False fire_fighters
+s1 2 False fire_fighters
+s1 3 False fire_fighters
+s1 4 True fire_locator
+s1 5 True fire_locator
+s1 6 False fire_locator
+synchronizing........... 1
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 2
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 3
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 4
+2 same state as me
+I am executing a state... 4
+4 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 5
+2 same state as me
+I am executing a state... 5
+5 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 6
+2 same state as me
+I am executing a state... 6
+6 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+s1 1 False fire_fighters
+s1 2 False fire_fighters
+s1 3 False fire_fighters
+s1 4 True fire_locator
+s1 5 True fire_locator
+s1 6 False fire_locator
+synchronizing........... 1
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 2
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 3
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 4
+2 same state as me
+I am executing a state... 4
+4 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 5
+2 same state as me
+I am executing a state... 5
+5 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 6
+2 same state as me
+I am executing a state... 6
+6 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+s1 1 False fire_fighters
+s1 2 False fire_fighters
+s1 3 False fire_fighters
+s1 4 True fire_locator
+s1 5 True fire_locator
+s1 6 False fire_locator
+synchronizing........... 1
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 2
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 3
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 4
+2 same state as me
+I am executing a state... 4
+4 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 5
+2 same state as me
+I am executing a state... 5
+5 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 6
+2 same state as me
+I am executing a state... 6
+6 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+s1 1 False fire_fighters
+s1 2 False fire_fighters
+s1 3 False fire_fighters
+s1 4 True fire_locator
+s1 5 True fire_locator
+s1 6 False fire_locator
+synchronizing........... 1
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 2
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 3
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 4
+2 same state as me
+I am executing a state... 4
+4 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 5
+2 same state as me
+I am executing a state... 5
+5 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 6
+2 same state as me
+I am executing a state... 6
+6 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+s1 1 False fire_fighters
+s1 2 False fire_fighters
+s1 3 False fire_fighters
+s1 4 True fire_locator
+s1 5 True fire_locator
+s1 6 False fire_locator
+synchronizing........... 1
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 2
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 3
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 4
+2 same state as me
+I am executing a state... 4
+4 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 5
+2 same state as me
+I am executing a state... 5
+5 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 6
+2 same state as me
+I am executing a state... 6
+6 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+s1 1 False fire_fighters
+s1 2 False fire_fighters
+s1 3 False fire_fighters
+s1 4 True fire_locator
+s1 5 True fire_locator
+s1 6 False fire_locator
+synchronizing........... 1
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 2
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 3
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 4
+2 same state as me
+I am executing a state... 4
+The result was true True s1 4
+4 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 5
+2 same state as me
+I am executing a state... 5
+5 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 6
+2 same state as me
+I am executing a state... 6
+The result was true True s1 6
+6 I am in state current
+I am in if inside check
+I am increasing the counter 3
+I am in if inside check
+I am increasing the counter 3
+I am in if inside check
+I am increasing the counter 3
+s1 1 False fire_fighters
+s1 2 False fire_fighters
+s1 3 False fire_fighters
+s1 4 True fire_locator
+s1 5 True fire_locator
+s1 6 True fire_locator
+synchronizing........... 1
+I am increasing the counter 0
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 2
+I am increasing the counter 0
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 3
+I am increasing the counter 0
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 4
+2 same state as me
+I am executing a state... 4
+4 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 3
+synchronizing........... 5
+2 same state as me
+I am executing a state... 5
+5 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 3
+synchronizing........... 6
+3 same state as me
+I am executing a state... 6
+6 I am in state current
+s1 1 False fire_fighters
+s1 2 False fire_fighters
+s1 3 False fire_fighters
+s1 4 True fire_locator
+s1 5 True fire_locator
+s2 6 False fire_locator
+synchronizing........... 1
+synchronizing........... 2
+synchronizing........... 3
+synchronizing........... 4
+0 same state as me
+I am executing a state... 4
+4 I am in state current
+synchronizing........... 5
+0 same state as me
+I am executing a state... 5
+5 I am in state current
+synchronizing........... 6
+0 same state as me
+I am executing a state... 6
+6 I am in state current
+s2 1 False fire_fighters
+s2 2 False fire_fighters
+s2 3 False fire_fighters
+s2 4 False fire_locator
+s2 5 False fire_locator
+s2 6 False fire_locator
+synchronizing........... 1
+synchronizing........... 2
+synchronizing........... 3
+synchronizing........... 4
+0 same state as me
+I am executing a state... 4
+4 I am in state current
+synchronizing........... 5
+0 same state as me
+I am executing a state... 5
+5 I am in state current
+synchronizing........... 6
+0 same state as me
+I am executing a state... 6
+6 I am in state current
+s2 1 False fire_fighters
+s2 2 False fire_fighters
+s2 3 False fire_fighters
+s2 4 False fire_locator
+s2 5 False fire_locator
+s2 6 False fire_locator
+synchronizing........... 1
+synchronizing........... 2
+synchronizing........... 3
+synchronizing........... 4
+0 same state as me
+I am executing a state... 4
+4 I am in state current
+synchronizing........... 5
+0 same state as me
+I am executing a state... 5
+The result was true True s2 5
+5 I am in state current
+I am in if inside check
+I am increasing the counter 1
+synchronizing........... 6
+0 same state as me
+I am executing a state... 6
+6 I am in state current
+I am in if inside check
+I am increasing the counter 1
+s2 1 False fire_fighters
+s2 2 False fire_fighters
+s2 3 False fire_fighters
+s2 4 False fire_locator
+s2 5 True fire_locator
+s2 6 False fire_locator
+synchronizing........... 1
+I am increasing the counter 0
+synchronizing........... 2
+I am increasing the counter 0
+synchronizing........... 3
+I am increasing the counter 0
+synchronizing........... 4
+0 same state as me
+I am executing a state... 4
+4 I am in state current
+I am in if inside check
+I am increasing the counter 1
+synchronizing........... 5
+1 same state as me
+I am executing a state... 5
+5 I am in state current
+I am in if inside check
+I am increasing the counter 1
+synchronizing........... 6
+1 same state as me
+I am executing a state... 6
+6 I am in state current
+I am in if inside check
+I am increasing the counter 1
+s2 1 False fire_fighters
+s2 2 False fire_fighters
+s2 3 False fire_fighters
+s2 4 False fire_locator
+s2 5 True fire_locator
+s2 6 False fire_locator
+synchronizing........... 1
+I am increasing the counter 0
+synchronizing........... 2
+I am increasing the counter 0
+synchronizing........... 3
+I am increasing the counter 0
+synchronizing........... 4
+1 same state as me
+I am executing a state... 4
+4 I am in state current
+I am in if inside check
+I am increasing the counter 1
+synchronizing........... 5
+1 same state as me
+I am executing a state... 5
+5 I am in state current
+I am in if inside check
+I am increasing the counter 1
+synchronizing........... 6
+1 same state as me
+I am executing a state... 6
+6 I am in state current
+I am in if inside check
+I am increasing the counter 1
+s2 1 False fire_fighters
+s2 2 False fire_fighters
+s2 3 False fire_fighters
+s2 4 False fire_locator
+s2 5 True fire_locator
+s2 6 False fire_locator
+synchronizing........... 1
+I am increasing the counter 0
+synchronizing........... 2
+I am increasing the counter 0
+synchronizing........... 3
+I am increasing the counter 0
+synchronizing........... 4
+1 same state as me
+I am executing a state... 4
+The result was true True s2 4
+4 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 5
+1 same state as me
+I am executing a state... 5
+5 I am in state current
+I am in if inside check
+I am increasing the counter 1
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 6
+1 same state as me
+I am executing a state... 6
+6 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+s2 1 False fire_fighters
+s2 2 False fire_fighters
+s2 3 False fire_fighters
+s2 4 True fire_locator
+s2 5 True fire_locator
+s2 6 False fire_locator
+synchronizing........... 1
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 2
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 3
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 4
+2 same state as me
+I am executing a state... 4
+4 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 5
+2 same state as me
+I am executing a state... 5
+5 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 6
+2 same state as me
+I am executing a state... 6
+6 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+s2 1 False fire_fighters
+s2 2 False fire_fighters
+s2 3 False fire_fighters
+s2 4 True fire_locator
+s2 5 True fire_locator
+s2 6 False fire_locator
+synchronizing........... 1
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 2
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 3
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 4
+2 same state as me
+I am executing a state... 4
+4 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 5
+2 same state as me
+I am executing a state... 5
+5 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 6
+2 same state as me
+I am executing a state... 6
+6 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+s2 1 False fire_fighters
+s2 2 False fire_fighters
+s2 3 False fire_fighters
+s2 4 True fire_locator
+s2 5 True fire_locator
+s2 6 False fire_locator
+synchronizing........... 1
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 2
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 3
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 4
+2 same state as me
+I am executing a state... 4
+4 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 5
+2 same state as me
+I am executing a state... 5
+5 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 6
+2 same state as me
+I am executing a state... 6
+6 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+s2 1 False fire_fighters
+s2 2 False fire_fighters
+s2 3 False fire_fighters
+s2 4 True fire_locator
+s2 5 True fire_locator
+s2 6 False fire_locator
+synchronizing........... 1
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 2
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 3
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 4
+2 same state as me
+I am executing a state... 4
+4 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 5
+2 same state as me
+I am executing a state... 5
+5 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 6
+2 same state as me
+I am executing a state... 6
+6 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+s2 1 False fire_fighters
+s2 2 False fire_fighters
+s2 3 False fire_fighters
+s2 4 True fire_locator
+s2 5 True fire_locator
+s2 6 False fire_locator
+synchronizing........... 1
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 2
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 3
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 4
+2 same state as me
+I am executing a state... 4
+4 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 5
+2 same state as me
+I am executing a state... 5
+5 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 6
+2 same state as me
+I am executing a state... 6
+6 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+s2 1 False fire_fighters
+s2 2 False fire_fighters
+s2 3 False fire_fighters
+s2 4 True fire_locator
+s2 5 True fire_locator
+s2 6 False fire_locator
+synchronizing........... 1
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 2
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 3
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 4
+2 same state as me
+I am executing a state... 4
+4 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 5
+2 same state as me
+I am executing a state... 5
+The result was true True s2 5
+5 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 6
+2 same state as me
+I am executing a state... 6
+6 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+s2 1 False fire_fighters
+s2 2 False fire_fighters
+s2 3 False fire_fighters
+s2 4 True fire_locator
+s2 5 True fire_locator
+s2 6 False fire_locator
+synchronizing........... 1
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 2
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 3
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 4
+2 same state as me
+I am executing a state... 4
+4 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 5
+2 same state as me
+I am executing a state... 5
+5 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 6
+2 same state as me
+I am executing a state... 6
+6 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+s2 1 False fire_fighters
+s2 2 False fire_fighters
+s2 3 False fire_fighters
+s2 4 True fire_locator
+s2 5 True fire_locator
+s2 6 False fire_locator
+synchronizing........... 1
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 2
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 3
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 4
+2 same state as me
+I am executing a state... 4
+4 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 5
+2 same state as me
+I am executing a state... 5
+5 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 6
+2 same state as me
+I am executing a state... 6
+6 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+s2 1 False fire_fighters
+s2 2 False fire_fighters
+s2 3 False fire_fighters
+s2 4 True fire_locator
+s2 5 True fire_locator
+s2 6 False fire_locator
+synchronizing........... 1
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 2
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 3
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 4
+2 same state as me
+I am executing a state... 4
+4 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 5
+2 same state as me
+I am executing a state... 5
+5 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 6
+2 same state as me
+I am executing a state... 6
+The result was true True s2 6
+6 I am in state current
+I am in if inside check
+I am increasing the counter 3
+I am in if inside check
+I am increasing the counter 3
+I am in if inside check
+I am increasing the counter 3
+s2 1 False fire_fighters
+s2 2 False fire_fighters
+s2 3 False fire_fighters
+s2 4 True fire_locator
+s2 5 True fire_locator
+s2 6 True fire_locator
+synchronizing........... 1
+I am increasing the counter 0
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 2
+I am increasing the counter 0
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 3
+I am increasing the counter 0
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 4
+2 same state as me
+I am executing a state... 4
+4 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 3
+synchronizing........... 5
+2 same state as me
+I am executing a state... 5
+5 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 3
+synchronizing........... 6
+3 same state as me
+I am executing a state... 6
+6 I am in state current
+s2 1 False fire_fighters
+s2 2 False fire_fighters
+s2 3 False fire_fighters
+s2 4 True fire_locator
+s2 5 True fire_locator
+s3 6 False fire_locator
+synchronizing........... 1
+0 same state as me
+I am executing a state... 1
+1 I am in state current
+synchronizing........... 2
+0 same state as me
+I am executing a state... 2
+2 I am in state current
+synchronizing........... 3
+0 same state as me
+I am executing a state... 3
+3 I am in state current
+synchronizing........... 4
+synchronizing........... 5
+synchronizing........... 6
+s3 1 False fire_fighters
+s3 2 False fire_fighters
+s3 3 False fire_fighters
+s3 4 False fire_locator
+s3 5 False fire_locator
+s3 6 False fire_locator
+synchronizing........... 1
+0 same state as me
+I am executing a state... 1
+1 I am in state current
+synchronizing........... 2
+0 same state as me
+I am executing a state... 2
+2 I am in state current
+synchronizing........... 3
+0 same state as me
+I am executing a state... 3
+3 I am in state current
+synchronizing........... 4
+synchronizing........... 5
+synchronizing........... 6
+s3 1 False fire_fighters
+s3 2 False fire_fighters
+s3 3 False fire_fighters
+s3 4 False fire_locator
+s3 5 False fire_locator
+s3 6 False fire_locator
+synchronizing........... 1
+0 same state as me
+I am executing a state... 1
+1 I am in state current
+synchronizing........... 2
+0 same state as me
+I am executing a state... 2
+2 I am in state current
+synchronizing........... 3
+0 same state as me
+I am executing a state... 3
+The result was true True s3 3
+3 I am in state current
+I am in if inside check
+I am increasing the counter 1
+synchronizing........... 4
+I am increasing the counter 0
+synchronizing........... 5
+I am increasing the counter 0
+synchronizing........... 6
+I am increasing the counter 0
+s3 1 False fire_fighters
+s3 2 False fire_fighters
+s3 3 True fire_fighters
+s3 4 False fire_locator
+s3 5 False fire_locator
+s3 6 False fire_locator
+synchronizing........... 1
+0 same state as me
+I am executing a state... 1
+1 I am in state current
+I am in if inside check
+I am increasing the counter 1
+synchronizing........... 2
+0 same state as me
+I am executing a state... 2
+2 I am in state current
+I am in if inside check
+I am increasing the counter 1
+synchronizing........... 3
+1 same state as me
+I am executing a state... 3
+3 I am in state current
+I am in if inside check
+I am increasing the counter 1
+synchronizing........... 4
+I am increasing the counter 0
+synchronizing........... 5
+I am increasing the counter 0
+synchronizing........... 6
+I am increasing the counter 0
+s3 1 False fire_fighters
+s3 2 False fire_fighters
+s3 3 True fire_fighters
+s3 4 False fire_locator
+s3 5 False fire_locator
+s3 6 False fire_locator
+synchronizing........... 1
+1 same state as me
+I am executing a state... 1
+1 I am in state current
+I am in if inside check
+I am increasing the counter 1
+synchronizing........... 2
+1 same state as me
+I am executing a state... 2
+2 I am in state current
+I am in if inside check
+I am increasing the counter 1
+synchronizing........... 3
+1 same state as me
+I am executing a state... 3
+3 I am in state current
+I am in if inside check
+I am increasing the counter 1
+synchronizing........... 4
+I am increasing the counter 0
+synchronizing........... 5
+I am increasing the counter 0
+synchronizing........... 6
+I am increasing the counter 0
+s3 1 False fire_fighters
+s3 2 False fire_fighters
+s3 3 True fire_fighters
+s3 4 False fire_locator
+s3 5 False fire_locator
+s3 6 False fire_locator
+synchronizing........... 1
+1 same state as me
+I am executing a state... 1
+1 I am in state current
+I am in if inside check
+I am increasing the counter 1
+synchronizing........... 2
+1 same state as me
+I am executing a state... 2
+2 I am in state current
+I am in if inside check
+I am increasing the counter 1
+synchronizing........... 3
+1 same state as me
+I am executing a state... 3
+The result was true True s3 3
+3 I am in state current
+I am in if inside check
+I am increasing the counter 1
+synchronizing........... 4
+I am increasing the counter 0
+synchronizing........... 5
+I am increasing the counter 0
+synchronizing........... 6
+I am increasing the counter 0
+s3 1 False fire_fighters
+s3 2 False fire_fighters
+s3 3 True fire_fighters
+s3 4 False fire_locator
+s3 5 False fire_locator
+s3 6 False fire_locator
+synchronizing........... 1
+1 same state as me
+I am executing a state... 1
+1 I am in state current
+I am in if inside check
+I am increasing the counter 1
+synchronizing........... 2
+1 same state as me
+I am executing a state... 2
+2 I am in state current
+I am in if inside check
+I am increasing the counter 1
+synchronizing........... 3
+1 same state as me
+I am executing a state... 3
+The result was true True s3 3
+3 I am in state current
+I am in if inside check
+I am increasing the counter 1
+synchronizing........... 4
+I am increasing the counter 0
+synchronizing........... 5
+I am increasing the counter 0
+synchronizing........... 6
+I am increasing the counter 0
+s3 1 False fire_fighters
+s3 2 False fire_fighters
+s3 3 True fire_fighters
+s3 4 False fire_locator
+s3 5 False fire_locator
+s3 6 False fire_locator
+synchronizing........... 1
+1 same state as me
+I am executing a state... 1
+The result was true True s3 1
+1 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 2
+1 same state as me
+I am executing a state... 2
+2 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 3
+1 same state as me
+I am executing a state... 3
+3 I am in state current
+I am in if inside check
+I am increasing the counter 1
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 4
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 5
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 6
+I am increasing the counter 0
+I am increasing the counter 0
+s3 1 True fire_fighters
+s3 2 False fire_fighters
+s3 3 True fire_fighters
+s3 4 False fire_locator
+s3 5 False fire_locator
+s3 6 False fire_locator
+synchronizing........... 1
+2 same state as me
+I am executing a state... 1
+1 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 2
+2 same state as me
+I am executing a state... 2
+2 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 3
+2 same state as me
+I am executing a state... 3
+3 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 4
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 5
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 6
+I am increasing the counter 0
+I am increasing the counter 0
+s3 1 True fire_fighters
+s3 2 False fire_fighters
+s3 3 True fire_fighters
+s3 4 False fire_locator
+s3 5 False fire_locator
+s3 6 False fire_locator
+synchronizing........... 1
+2 same state as me
+I am executing a state... 1
+1 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 2
+2 same state as me
+I am executing a state... 2
+2 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 3
+2 same state as me
+I am executing a state... 3
+3 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 4
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 5
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 6
+I am increasing the counter 0
+I am increasing the counter 0
+s3 1 True fire_fighters
+s3 2 False fire_fighters
+s3 3 True fire_fighters
+s3 4 False fire_locator
+s3 5 False fire_locator
+s3 6 False fire_locator
+synchronizing........... 1
+2 same state as me
+I am executing a state... 1
+1 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 2
+2 same state as me
+I am executing a state... 2
+2 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 3
+2 same state as me
+I am executing a state... 3
+3 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 4
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 5
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 6
+I am increasing the counter 0
+I am increasing the counter 0
+s3 1 True fire_fighters
+s3 2 False fire_fighters
+s3 3 True fire_fighters
+s3 4 False fire_locator
+s3 5 False fire_locator
+s3 6 False fire_locator
+synchronizing........... 1
+2 same state as me
+I am executing a state... 1
+1 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 2
+2 same state as me
+I am executing a state... 2
+2 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 3
+2 same state as me
+I am executing a state... 3
+3 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 4
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 5
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 6
+I am increasing the counter 0
+I am increasing the counter 0
+s3 1 True fire_fighters
+s3 2 False fire_fighters
+s3 3 True fire_fighters
+s3 4 False fire_locator
+s3 5 False fire_locator
+s3 6 False fire_locator
+synchronizing........... 1
+2 same state as me
+I am executing a state... 1
+1 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 2
+2 same state as me
+I am executing a state... 2
+2 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 3
+2 same state as me
+I am executing a state... 3
+The result was true True s3 3
+3 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 4
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 5
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 6
+I am increasing the counter 0
+I am increasing the counter 0
+s3 1 True fire_fighters
+s3 2 False fire_fighters
+s3 3 True fire_fighters
+s3 4 False fire_locator
+s3 5 False fire_locator
+s3 6 False fire_locator
+synchronizing........... 1
+2 same state as me
+I am executing a state... 1
+1 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 2
+2 same state as me
+I am executing a state... 2
+2 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 3
+2 same state as me
+I am executing a state... 3
+The result was true True s3 3
+3 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 4
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 5
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 6
+I am increasing the counter 0
+I am increasing the counter 0
+s3 1 True fire_fighters
+s3 2 False fire_fighters
+s3 3 True fire_fighters
+s3 4 False fire_locator
+s3 5 False fire_locator
+s3 6 False fire_locator
+synchronizing........... 1
+2 same state as me
+I am executing a state... 1
+1 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 2
+2 same state as me
+I am executing a state... 2
+2 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 3
+2 same state as me
+I am executing a state... 3
+3 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 4
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 5
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 6
+I am increasing the counter 0
+I am increasing the counter 0
+s3 1 True fire_fighters
+s3 2 False fire_fighters
+s3 3 True fire_fighters
+s3 4 False fire_locator
+s3 5 False fire_locator
+s3 6 False fire_locator
+synchronizing........... 1
+2 same state as me
+I am executing a state... 1
+1 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 2
+2 same state as me
+I am executing a state... 2
+2 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 3
+2 same state as me
+I am executing a state... 3
+3 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 4
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 5
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 6
+I am increasing the counter 0
+I am increasing the counter 0
+s3 1 True fire_fighters
+s3 2 False fire_fighters
+s3 3 True fire_fighters
+s3 4 False fire_locator
+s3 5 False fire_locator
+s3 6 False fire_locator
+synchronizing........... 1
+2 same state as me
+I am executing a state... 1
+1 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 2
+2 same state as me
+I am executing a state... 2
+2 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 3
+2 same state as me
+I am executing a state... 3
+3 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 4
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 5
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 6
+I am increasing the counter 0
+I am increasing the counter 0
+s3 1 True fire_fighters
+s3 2 False fire_fighters
+s3 3 True fire_fighters
+s3 4 False fire_locator
+s3 5 False fire_locator
+s3 6 False fire_locator
+synchronizing........... 1
+2 same state as me
+I am executing a state... 1
+1 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 2
+2 same state as me
+I am executing a state... 2
+2 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 3
+2 same state as me
+I am executing a state... 3
+3 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 4
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 5
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 6
+I am increasing the counter 0
+I am increasing the counter 0
+s3 1 True fire_fighters
+s3 2 False fire_fighters
+s3 3 True fire_fighters
+s3 4 False fire_locator
+s3 5 False fire_locator
+s3 6 False fire_locator
+synchronizing........... 1
+2 same state as me
+I am executing a state... 1
+The result was true True s3 1
+1 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+synchronizing........... 2
+2 same state as me
+I am executing a state... 2
+The result was true True s3 2
+2 I am in state current
+I am in if inside check
+I am increasing the counter 3
+I am in if inside check
+I am increasing the counter 3
+I am in if inside check
+I am increasing the counter 3
+synchronizing........... 3
+2 same state as me
+I am executing a state... 3
+3 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 3
+synchronizing........... 4
+I am increasing the counter 0
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 5
+I am increasing the counter 0
+I am increasing the counter 0
+I am increasing the counter 0
+synchronizing........... 6
+I am increasing the counter 0
+I am increasing the counter 0
+I am increasing the counter 0
+s3 1 True fire_fighters
+s3 2 True fire_fighters
+s3 3 True fire_fighters
+s3 4 False fire_locator
+s3 5 False fire_locator
+s3 6 False fire_locator
+synchronizing........... 1
+2 same state as me
+I am executing a state... 1
+1 I am in state current
+I am in if inside check
+I am increasing the counter 2
+I am in if inside check
+I am increasing the counter 3
+I am in if inside check
+I am increasing the counter 3
+synchronizing........... 2
+3 same state as me
+I am executing a state... 2
+2 I am in state current
+synchronizing........... 3
+synchronizing........... 4
+0 same state as me
+I am executing a state... 4
+4 I am in state current
+synchronizing........... 5
+0 same state as me
+I am execu
