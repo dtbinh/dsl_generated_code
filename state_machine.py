@@ -18,7 +18,6 @@ class StateMachine:
  	self.current=current
  	self.build()
 	self.flag=False
-	
  def create_initial_state(self,name, role, action_method,condition):
 	state=State(name,role,action_method,self.current,condition)
 	self.initial_state=state
@@ -51,18 +50,20 @@ class StateMachine:
 		return
 	elif(current_state.next!=None): self.update_state(new_state,current_state.next)
 		
- def execute(self, state):
-	print len(state.drone_id), "same state as me"	
-	if self.current_state.next!=None  and len(state.drone_id)==3:
+ def execute(self, state):	
+	if self.current_state.next!=None  and len(state.drone_id)==state.condition.max_count:
 		 self.current_state=self.current_state.next
 	state.execute()
+ 
+			
+ def send_message(self):
+	return self.current_state
+
+
  def trigger_state_change(self,state):
 	if state!=self.current_state:
 		return True
 	else: return False
-			
- def send_message(self):
-	return self.current_state
 
  def print_states(self,state):
 	print "current state= ",state.name
@@ -71,11 +72,6 @@ class StateMachine:
 	self.print_states(state.next)
  
  def build(self):
-      self.create_initial_state("s1","fire_locator",sim.find_fire,Condition(False,True,10)).create_state("s2","fire_locator",sim.propagate_fire_position,Condition(False,True,10)).create_state("s3","fire_fighters",sim.go_to_fire_location,Condition(False,True,10)).create_state("s4","fire_locator",sim.tend_away_from_fire,Condition(False,True,10)).create_state("s5","fire_fighters",sim.turn_down_fire,Condition(False,True,10))
-      
-
-      #self.print_states(self.initial_state);
-      #for state in self.states:
-      #	state.getNext()
- 
-	
+      self.create_initial_state("s1","fire_locator",sim.find_fire,Condition(3,0)).
+		create_state("s2","fire_fighters",sim.go_to_fire_location,Condition(3,0)).
+		create_state("s3","fire_locator",sim.tend_away_from_fire,Condition(3,0))

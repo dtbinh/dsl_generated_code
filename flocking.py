@@ -89,7 +89,7 @@ tf = 250
 dt = 5e-2
 time = np.linspace(0, tf, tf/dt)
 it = 0
-frames = 10
+frames = 100
 
 # Data log
 q1_log = quadlog.quadlog(time)

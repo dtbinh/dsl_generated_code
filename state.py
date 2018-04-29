@@ -11,12 +11,14 @@ class State:
  current=None
  complete=False
  drone_id=None
+ condition=None
  def __init__(self,name, role, action_method,current,condition):
 	self.name=name
 	self.role=role
 	self.event=action_method
 	self.current=current
-	self.create_Transition(condition)
+	#self.create_Transition(condition)
+        self.condition=condition
 	self.drone_id=[]
  def get_Next(self):
 	return next

@@ -54,6 +54,7 @@ class Ensemble:
  def state_changed(self,drone):
 	drone.ensemble.count=0
 	del drone.ensemble.drone_id[:]
+ 
 	
  
 			

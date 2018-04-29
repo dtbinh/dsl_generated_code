@@ -70,10 +70,28 @@ def stay_in_border(position):
 		v.y = -constant
 		
 	return v.return_as_vector()
+def get_coordinates(current):
+	return current.xyz[0:1]
+def normalize(vector):
+	vector=PVector(vector[0],vector[1])
+	vector.normalize()
+	return vector.return_as_vector()
+def temperature_sensor(current):
+	fire_x=0.0
+	fire_y=0.0
+	value=[]
+	a=10000
+	b=6
+	distance=math.sqrt(pow((current.xyz[0] - fire_x), 2) + pow((current.xyz[1] - fire_y), 2))
+	temperature=a/(distance+b)
+	value.append(temperature)
+	return temperature
+	
+
 def separation (current):
 	alt_d=8
 	position=PVector(current.xyz[0],current.xyz[1])
-	close_drones=find_neighbours_in_radius(current,100)
+	close_drones=find_neighbours_in_radius(current,30)
 	if len(close_drones)==0:
 		empty=PVector(0,0)
 		velocity=PVector(current.v_ned_d[0],current.v_ned_d[1])
@@ -83,14 +101,14 @@ def separation (current):
 	dx=(dx/len(close_drones))
 	dy=sub_all_y(close_drones,current)
 	dy=(dy/len(close_drones))
-	sep_vector=PVector(dx,dy)
-	sep_vector.normalize()
-	return 	sep_vector.return_as_vector()
+	sep_vector=numpy.array([dx,dy])
+	sep_vector=normalize(sep_vector)
+	return sep_vector
 
 def cohesion (current):
 	alt_d=8
 	position=PVector(current.xyz[0],current.xyz[1])
-	close_drones=find_neighbours_in_radius(current,100)
+	close_drones=find_neighbours_in_radius(current,30)
 	if len(close_drones)==0:
 		empty=PVector(0,0)
 		velocity=PVector(current.v_ned_d[0],current.v_ned_d[1])
@@ -100,14 +118,14 @@ def cohesion (current):
 	sx=(sx/len(close_drones))
 	sy=sum_all_y(close_drones,current)
 	sy=(sy/len(close_drones))
-	cohesion_vec=PVector((sx-position.x),(sy-position.y))
-	cohesion_vec.normalize()
-	return 	cohesion_vec.return_as_vector()
+	cohesion_vec=numpy.array([(sx-position.x),(sy-position.y)])
+	cohesion_vec=normalize(cohesion_vec)
+	return cohesion_vec
 
 def velavg (current):
 	alt_d=8
 	position=PVector(current.xyz[0],current.xyz[1])
-	close_drones=find_neighbours_in_radius(current,100)
+	close_drones=find_neighbours_in_radius(current,30)
 	if len(close_drones)==0:
 		empty=PVector(0,0)
 		velocity=PVector(current.v_ned_d[0],current.v_ned_d[1])
@@ -117,90 +135,61 @@ def velavg (current):
 	velx=(velx/len(close_drones))
 	vely=sum_all_vel_x(close_drones,current)
 	vely=(vely/len(close_drones))
-	vel_vector=PVector(velx,vely)
-	vel_vector.normalize()
-	return 	vel_vector.return_as_vector()
+	vel_vector=numpy.array([velx,vely])
+	vel_vector=normalize(vel_vector)
+	return vel_vector
 def flocking (current):
 	print "flocking" 
 	flocking_vec=((separation(current)+cohesion(current))+velavg(current))
-	alt_d=8
-	print flocking_vec, "flocking vector"
-	#current.set_v_2D_alt_lya(flocking_vec,-alt_d)
 	return flocking_vec
 def find_fire (current):
-	print "find_fire", current.tag
-	alt_d=8
+	print "find_fire" 
 	if not(current.temperature_sensor==True):
-			return False
-	flocking_vec=flocking(current)
-	value=temp.temperature_sensor(current.xyz[0],current.xyz[1],0.0,0.0)
-	#print "value", value	
-	if value > 800:
-		print current.tag, "I am really hot!"
-		point=current.xyz
+		 current.set_xyz_ned_lya(current.xyz)
+		 return
+	if (temperature_sensor(current)>800):
+		fire=get_coordinates(current)
 		current.set_xyz_ned_lya(current.xyz)
 		return True
-	else: current.set_v_2D_alt_lya(flocking_vec,-alt_d)
-def propagate_fire_position (current): #more like wait
-	print "propagate_fire_position", current.tag
-	if not(current.temperature_sensor==True):
-		#current.set_xyz_ned_lya(current.xyz)
-		return False
-	current.set_xyz_ned_lya(current.xyz)
-	probability=randint(0, 100)
-	if probability<=2:
-		return True
-		
+	flocking_v=flocking(current)
+	alt_d=8
+	current.set_v_2D_alt_lya(flocking_v,-alt_d)
 def tend_away_from_fire (current):
-	print "tend_away_from_fire",current.tag
+	print "tend_away_from_fire" 
 	if not(current.temperature_sensor==True):
-		current.set_xyz_ned_lya(current.xyz)
-		return False
+		 current.set_xyz_ned_lya(current.xyz)
+		 return
+	target=numpy.array([0,0])
+	target=(target-get_coordinates(current))
+	target=(target/5)
+	target=normalize(target)
+	direction=(flocking(current)+(-1*target))
 	alt_d=8
-	flocking_vec=flocking(current)
-	target=PVector(0,0) #substitute with fire point
-	position=PVector(current.xyz[0],current.xyz[1])
-	target.subVector(position)
-	target.divScalar(1)
-	target.normalize()
-	target=target.return_as_vector()
-	target_fire=flocking_vec+(-1*target)+stay_in_border(position)
-	current.set_v_2D_alt_lya(target_fire,-alt_d)
+	current.set_v_2D_alt_lya(direction,-alt_d)
 	return False
-	
-def go_to_fire_location(current):
-	print " I am in fire location", current.tag
+def go_to_fire_location (current):
+	print "go_to_fire_location" 
 	if not(current.water_cargo==True):
-		current.set_xyz_ned_lya(current.xyz)
-		print "I am in not",current.tag
-		return False
-	print "I am entering this branch"
+		 current.set_xyz_ned_lya(current.xyz)
+		 return
+	target=numpy.array([0,0])
+	target=(target-get_coordinates(current))
+	target=(target/10)
+	target=normalize(target)
+	diff=(target-get_coordinates(current))
+	direction=(flocking(current)+target)
 	alt_d=8
-	flocking_vec=flocking(current)
-	target=PVector(0,0) #substitute with fire point
-	position=PVector(current.xyz[0],current.xyz[1])
-	target.subVector(position)
-	target.divScalar(10)
-	target.normalize()
-	target=target.return_as_vector()
-	target_fire=flocking_vec+target
-	current.set_v_2D_alt_lya(target_fire,-alt_d)
-	diff=position.return_as_vector()-target
-	print diff, "printing difference between the two"
-	if diff[0]<=1 and diff[1]<=1:
+	current.set_v_2D_alt_lya(direction,-alt_d)
+	if ((diff[0]<=1)and(diff[1]<=1)):
 		return True
-	else: return False
-	
+	return False
 def turn_down_fire (current):
 	print "turn_down_fire" 
 	if not(current.water_cargo==True):
-			return False
-	return False
+		 current.set_xyz_ned_lya(current.xyz)
+		 return
 def assign_role(current):
 	if (current.temperature_sensor==True):
 		current.role="fire_locator"
 	if (current.water_cargo==True):
 		current.role="fire_fighters"
-def run_simulation(agents):
-	print len(agents), "len agents"
-	

@@ -20,6 +20,10 @@ class PVector:
     	self.x -= v.x
     	self.y -= v.y
  
+ def mean(self,v):
+	self.x=(self.x-v.x)/2
+	self.y=(self.y-v.y)/2
+ 
  def subTwoVector(self,v, v2):
     	tmp=PVector(0.0,0.0)
     	v.x -= v2.x
