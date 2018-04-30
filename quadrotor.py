@@ -5,6 +5,8 @@ from group import Group
 from state_machine import StateMachine 
 from state import State
 from ensemble import Ensemble
+from role import Role
+
 class quadrotor:
     
     density = 0.0005
@@ -22,11 +24,12 @@ class quadrotor:
     role=None
     ensemble=None
     stat_m=None
-    
+    var=None
 
     def __init__(self, tag, m, l, J, CDl, CDr, kt, km, kw, att, \
             pqr, xyz, v_ned, w):
         # physical constants
+	self.var=[]
 	self.stat_m=StateMachine(self)
 	self.group=Group()
         self.tag = tag
@@ -387,4 +390,22 @@ class quadrotor:
 			if distance==0:
 				self.crashed=1
 				print self.tag,"was in the same position as ",drone.tag
+    
+    def heartbeat(self,other,radius):
+	self_position=self.xyz
+	position=other.xyz
+	x1=self_position[0]
+	x2=position[0]
+	y1=self_position[1]
+	y2=position[1]
+	z1=self_position[2]
+	z2=position[2]
+
+	distance=math.sqrt(pow((x1 - x2), 2) + pow((y1 - y2), 2)+ pow((z1 - z2), 2))
+	if distance <= radius:
+		return True
+	else:return False
+    
+    def shared_variable(self,var):
+	self.var=var
 			

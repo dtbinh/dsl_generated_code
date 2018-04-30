@@ -222,12 +222,12 @@ for t in time:
     if it%frames == 0:
         axis3d.cla()
 	
-	q1_label=q1.stat_m.current_state.name+" "+str(q1.tag)+" "+str(q1.stat_m.current_state.complete)+" "+q1.role
-	q2_label=q2.stat_m.current_state.name+" "+str(q2.tag)+" "+str(q2.stat_m.current_state.complete)+" "+q2.role
-	q3_label=q3.stat_m.current_state.name+" "+str(q3.tag)+" "+str(q3.stat_m.current_state.complete)+" "+q3.role
-	q4_label=q4.stat_m.current_state.name+" "+str(q4.tag)+" "+str(q4.stat_m.current_state.complete)+" "+q4.role
-	q5_label=q5.stat_m.current_state.name+" "+str(q5.tag)+" "+str(q5.stat_m.current_state.complete)+" "+q5.role
-	q6_label=q6.stat_m.current_state.name+" "+str(q6.tag)+" "+str(q6.stat_m.current_state.complete)+" "+q6.role
+	q1_label=q1.stat_m.current_state.name+" "+str(q1.tag)+" "+str(q1.stat_m.current_state.complete)+" "+q1.role+" "+str(len(q1.var))
+	q2_label=q2.stat_m.current_state.name+" "+str(q2.tag)+" "+str(q2.stat_m.current_state.complete)+" "+q2.role+" "+str(len(q2.var))
+	q3_label=q3.stat_m.current_state.name+" "+str(q3.tag)+" "+str(q3.stat_m.current_state.complete)+" "+q3.role+" "+str(len(q3.var))
+	q4_label=q4.stat_m.current_state.name+" "+str(q4.tag)+" "+str(q4.stat_m.current_state.complete)+" "+q4.role+" "+str(len(q4.var))
+	q5_label=q5.stat_m.current_state.name+" "+str(q5.tag)+" "+str(q5.stat_m.current_state.complete)+" "+q5.role+" "+str(len(q5.var))
+	q6_label=q6.stat_m.current_state.name+" "+str(q6.tag)+" "+str(q6.stat_m.current_state.complete)+" "+q6.role+" "+str(len(q6.var))
 	
 	print q1_label
 	print q2_label

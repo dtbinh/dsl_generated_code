@@ -72,6 +72,4 @@ class StateMachine:
 	self.print_states(state.next)
  
  def build(self):
-      self.create_initial_state("s1","fire_locator",sim.find_fire,Condition(3,0)).
-		create_state("s2","fire_fighters",sim.go_to_fire_location,Condition(3,0)).
-		create_state("s3","fire_locator",sim.tend_away_from_fire,Condition(3,0))
+      self.create_initial_state("s1","fire_locator",sim.find_fire,Condition(3,0)).create_state("s2","fire_fighters",sim.go_to_fire_location,Condition(3,0)).create_state("s3","fire_locator",sim.tend_away_from_fire,Condition(3,0))

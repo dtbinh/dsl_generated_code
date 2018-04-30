@@ -70,8 +70,21 @@ def stay_in_border(position):
 		v.y = -constant
 		
 	return v.return_as_vector()
-def get_coordinates(current):
+def get_coordinates(current):	
 	return current.xyz[0:1]
+
+def get_position_by_radius(current):
+	x=float("{0:.2f}".format(current.xyz[0]))	
+	y=float("{0:.2f}".format(current.xyz[1]))
+	position=numpy.array([x,y])
+	for point in current.var:
+		print "pointsssss",position,point
+		if abs(point[0]-position[0])<=1 and abs(point[1]-position[1])<=1:
+			return current.var       		
+	current.var.append(position)
+	#print "the list is long:",len(current.var)
+	return current.var
+
 def normalize(vector):
 	vector=PVector(vector[0],vector[1])
 	vector.normalize()
@@ -148,7 +161,8 @@ def find_fire (current):
 		 current.set_xyz_ned_lya(current.xyz)
 		 return
 	if (temperature_sensor(current)>800):
-		fire=get_coordinates(current)
+		fire=get_position_by_radius(current)
+		current.shared_variable(fire)
 		current.set_xyz_ned_lya(current.xyz)
 		return True
 	flocking_v=flocking(current)
