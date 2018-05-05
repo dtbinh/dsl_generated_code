@@ -25,11 +25,12 @@ class quadrotor:
     ensemble=None
     stat_m=None
     var=None
-
+    variables=None
     def __init__(self, tag, m, l, J, CDl, CDr, kt, km, kw, att, \
             pqr, xyz, v_ned, w):
         # physical constants
 	self.var=[]
+	self.variables={}
 	self.stat_m=StateMachine(self)
 	self.group=Group()
         self.tag = tag
@@ -406,6 +407,8 @@ class quadrotor:
 		return True
 	else:return False
     
-    def shared_variable(self,var):
+    def shared_variable(self,var,name):
 	self.var=var
+	self.variables[name]=var
+	print self.variables, "VARIABLES --------------------------------------"
 			
