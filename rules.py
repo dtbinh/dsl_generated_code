@@ -9,13 +9,14 @@ from random import randint
 def sub_all_x(close_drones, current):
 	dx=0
 	for other in close_drones:
-		dx-=current.xyz[0]-other.xyz[0]
-	return dx
-						
+		dx+=current.xyz[0]-other.xyz[0]
+	dx=(-1)*dx
+	return dx					
 def sub_all_y(close_drones, current):
 	dy=0
 	for other in close_drones:
-		dy-=current.xyz[1]-other.xyz[1]
+		dy+=current.xyz[1]-other.xyz[1]
+	dy=(-1)*dy
 	return dy
 def sum_all_x(close_drones, current):
 	dx=0
@@ -32,20 +33,21 @@ def sum_all_y(close_drones, current):
 def sum_all_vel_x(close_drones, current):
 	dx=0
 	for other in close_drones:
-		dx+=other.v_ned_d[0]
+		dx+=current.v_ned_d[0]-other.v_ned_d[0]
 	return dx
 						
 def sum_all_vel_y(close_drones, current):
 	dy=0
 	for other in close_drones:
-		dy+=other.v_ned_d[1]
+		dy+=current.v_ned_d[1]-other.v_ned_d[1]
 	return dy
 		
 def find_neighbours_in_radius(current,radius):
 	agents=current.group.all_drones
 	neibourgh=[]
 	for it in agents:
-		if euclidean_distance(it.xyz,current.xyz)<=radius and it.role==current.role:
+	    if it.tag!=current.tag:
+		if euclidean_distance(it.xyz,current.xyz)<=radius: #and it.role==current.role:
 			neibourgh.append(it)
 	return neibourgh
 		
@@ -97,13 +99,11 @@ def get_position_by_radius(current):
 			return current.var       		
 	current.var.append(position)
 	return current.var
-	
-	
-
+		
 def separation (current):
 	alt_d=8
 	position=PVector(current.xyz[0],current.xyz[1])
-	close_drones=find_neighbours_in_radius(current,30)
+	close_drones=find_neighbours_in_radius(current,1000)
 	if len(close_drones)==0:
 		empty=PVector(0,0)
 		velocity=PVector(current.v_ned_d[0],current.v_ned_d[1])
@@ -112,7 +112,7 @@ def separation (current):
 	dx=sub_all_x(close_drones,current)
 	dx=(dx/len(close_drones))
 	dy=sub_all_y(close_drones,current)
-	dy=(dy/len(close_drones))
+	dy=(dy/len(close_drones))	
 	sep_vector=numpy.array([dx,dy])
 	sep_vector=normalize(sep_vector)
 	return sep_vector
@@ -120,7 +120,7 @@ def separation (current):
 def cohesion (current):
 	alt_d=8
 	position=PVector(current.xyz[0],current.xyz[1])
-	close_drones=find_neighbours_in_radius(current,30)
+	close_drones=find_neighbours_in_radius(current,1000)
 	if len(close_drones)==0:
 		empty=PVector(0,0)
 		velocity=PVector(current.v_ned_d[0],current.v_ned_d[1])
@@ -128,8 +128,10 @@ def cohesion (current):
 		return empty.return_as_vector()
 	sx=sum_all_x(close_drones,current)
 	sx=(sx/len(close_drones))
+	sx=sx - current.xyz[0]
 	sy=sum_all_y(close_drones,current)
 	sy=(sy/len(close_drones))
+	sy=sy - current.xyz[1]
 	cohesion_vec=numpy.array([(sx-position.x),(sy-position.y)])
 	cohesion_vec=normalize(cohesion_vec)
 	return cohesion_vec
@@ -137,7 +139,7 @@ def cohesion (current):
 def velavg (current):
 	alt_d=8
 	position=PVector(current.xyz[0],current.xyz[1])
-	close_drones=find_neighbours_in_radius(current,30)
+	close_drones=find_neighbours_in_radius(current,1000)
 	if len(close_drones)==0:
 		empty=PVector(0,0)
 		velocity=PVector(current.v_ned_d[0],current.v_ned_d[1])
@@ -150,10 +152,17 @@ def velavg (current):
 	vel_vector=numpy.array([velx,vely])
 	vel_vector=normalize(vel_vector)
 	return vel_vector
+
 def flocking (current):
 	print "flocking" 
 	flocking_vec=((separation(current)+cohesion(current))+velavg(current))
-	return flocking_vec
+	current.set_v_2D_alt_lya(flocking_vec,-8)
+	#return flocking_vec
+def spread (current):
+	print "flocking" 
+	flocking_vec=((separation(current)+-3*cohesion(current))+velavg(current))
+	current.set_v_2D_alt_lya(flocking_vec,-8)
+	#return flocking_vec
 def find_fire (current):
 	print "find_fire" 
 	if not(current.temperature_sensor==True):

@@ -149,99 +149,25 @@ quad_list[3].temperature_sensor=True
 quad_list[4].temperature_sensor=True
 quad_list[5].temperature_sensor=True
 
-for current in quad_list:
- rules.assign_role(current)
- print current.role, "Printing the current role",current.tag
-for current in quad_list:
- current.create_ensemble(quad_list,"name")
- #current.stat_m.execute(current.stat_m.current_state)
-#exit(0)
 
 for t in time:
+    ##############################################TEST 1 FLOCKING##############################################################
+    #for d in quad_list:
+    #	d.group.syncronize(d,quad_list,radius)
+    #   rules.flocking(d)
+     ##############################################TEST 1 SPREADING##############################################################
+    #for d in quad_list:
+    #	d.group.syncronize(d,quad_list,radius)
+    #	rules.spread(d)
     
-    
-    
-    #rules.run_simulation(quad_list)
-    # Simulation
-    #X = np.append(q1.xyz[0:2], np.append(q2.xyz[0:2], q3.xyz[0:2]))
-    #V = np.append(q1.v_ned[0:2], np.append(q2.v_ned[0:2], q3.v_ned[0:2]))
-    #U = fc.u_acc(X, V)
-
-    #q1.set_a_2D_alt_lya(U[0:2], -alt_d)
-    #q2.set_a_2D_alt_lya(U[2:4], -alt_d)
-    #q3.set_a_2D_alt_lya(U[4:6], -alt_d)
-    # Simulation
-    
-    q1.group.syncronize(q1,quad_list,radius)
-    #q1.temperature_sensor=True
-    #rules.go_to_fire_location(q1)
-    q1.step(dt)
-    #q1.same_position(quad_list)
-    
-    
-    q2.group.syncronize(q2,quad_list,radius)
-    #q2.temperature_sensor=True
-    #rules.go_to_fire_location(q2)
-    q2.step(dt)
-    #q2.same_position(quad_list)
 
     
-    q3.group.syncronize(q3,quad_list,radius)
-    #q3.temperature_sensor=True
-    #rules.go_to_fire_location(q3)
-    q3.step(dt)
-    #q3.same_position(quad_list)
-
+    for d in quad_list:
+    	d.step(dt)
   
-    q4.group.syncronize(q4,quad_list,radius)
-    #q4.water_cargo=True
-    #rules.go_to_fire_location(q4)
-    q4.step(dt)
-    #q4.same_position(quad_list)
-
-    
-    q5.group.syncronize(q5,quad_list,radius)
-    #q5.water_cargo=True
-    #rules.go_to_fire_location(q5)
-    q5.step(dt)
-    #q5.same_position(quad_list)
-
-    
-    q6.group.syncronize(q6,quad_list,radius)
-    #q6.water_cargo=True
-    #rules.go_to_fire_location(q6)
-    q6.step(dt)
-    #q6.same_position(quad_list)
-   
-    #rules.run_simulation(quad_list)
-    # Animation
-    for current in quad_list:
-    		current.ensemble.synchronize_state(current)
-	
     
     if it%frames == 0:
         axis3d.cla()
-	
-	q1_label=q1.stat_m.current_state.name+" "+str(q1.tag)+" "+str(q1.stat_m.current_state.complete)+" "+q1.role+" "+str(len(q1.var))
-	q2_label=q2.stat_m.current_state.name+" "+str(q2.tag)+" "+str(q2.stat_m.current_state.complete)+" "+q2.role+" "+str(len(q2.var))
-	q3_label=q3.stat_m.current_state.name+" "+str(q3.tag)+" "+str(q3.stat_m.current_state.complete)+" "+q3.role+" "+str(len(q3.var))
-	q4_label=q4.stat_m.current_state.name+" "+str(q4.tag)+" "+str(q4.stat_m.current_state.complete)+" "+q4.role+" "+str(len(q4.var))
-	q5_label=q5.stat_m.current_state.name+" "+str(q5.tag)+" "+str(q5.stat_m.current_state.complete)+" "+q5.role+" "+str(len(q5.var))
-	q6_label=q6.stat_m.current_state.name+" "+str(q6.tag)+" "+str(q6.stat_m.current_state.complete)+" "+q6.role+" "+str(len(q6.var))
-	
-	print q1_label
-	print q2_label
-	print q3_label
-	print q4_label
-	print q5_label
-	print q6_label
-
-    	axis3d.text2D(0.05, 0.95,q1_label , transform=axis3d.transAxes)
-    	axis3d.text2D(0.05, 0.90,q2_label , transform=axis3d.transAxes)
-    	axis3d.text2D(0.05, 0.85,q3_label , transform=axis3d.transAxes)
-    	axis3d.text2D(0.05, 0.80,q4_label , transform=axis3d.transAxes)
-    	axis3d.text2D(0.05, 0.75,q5_label , transform=axis3d.transAxes)
-    	axis3d.text2D(0.05, 0.70,q6_label , transform=axis3d.transAxes)
 	
 
         ani.draw3d(axis3d, q1.xyz, q1.Rot_bn(), quadcolor[0])
@@ -251,13 +177,6 @@ for t in time:
 	ani.draw3d(axis3d, q4.xyz, q4.Rot_bn(), quadcolor[0])
 	ani.draw3d(axis3d, q5.xyz, q5.Rot_bn(), quadcolor[0])
 	ani.draw3d(axis3d, q6.xyz, q6.Rot_bn(), quadcolor[0])
-	
-	#axis3d.text(0,0,0,q1.stat_m.current_state.name)
-	#axis3d.text(q2.xyz[1],q2.xyz[0],q2.xyz[2],q2.stat_m.current_state.name)
-	#axis3d.text(q3.xyz[1],q3.xyz[0],q3.xyz[2],q3.stat_m.current_state.name)
-	#axis3d.text(q4.xyz[1],q4.xyz[0],q4.xyz[2],q4.stat_m.current_state.name)
-	#axis3d.text(q5.xyz[1],q5.xyz[0],q5.xyz[2],q5.stat_m.current_state.name)
-	#axis3d.text(q6.xyz[1],q6.xyz[0],q6.xyz[2],q6.stat_m.current_state.name)
 	
 	
 	
@@ -338,93 +257,9 @@ for t in time:
 
 
 
-#for vector in q1.group.fire_list:
-#    	print vector.x, " ", vector.y, " "
-print len(q1.group.fire_list), "q1"
-
-	
-#for vector in q2.group.fire_list:
-#    	print vector.x, " ", vector.y, " " 
-print len(q2.group.fire_list), "q2"
-
-    
-#for vector in q3.group.fire_list:
-#    	print vector.x, " ", vector.y, " " 
-print len(q3.group.fire_list), "q3"
-
-
-#for vector in q4.group.fire_list:
-#   	print vector.x, " ", vector.y, " " 
-print len(q4.group.fire_list), "q4"
-
-    
-#for vector in q5.group.fire_list:
-#   	print vector.x, " ", vector.y, " " 
-print len(q5.group.fire_list), "q5"
-
-
-#for vector in q6.group.fire_list:
-#   	print vector.x, " ", vector.y, " " 
-print len(q6.group.fire_list), "q6"
-
-
-pl.figure(1)
-pl.plot(time, -q1_log.v_ned_h[:, 2], label="-V_z")
-pl.plot(time, q1_log.v_ned_h[:, 0], label="V_x")
-pl.plot(time, q1_log.v_ned_h[:, 1], label="V_y")
-pl.xlabel("Time [s]")
-pl.ylabel("Velocity [m/s]")
-pl.grid()
-pl.legend()
-
-pl.figure(2)
-pl.plot(time, -q2_log.v_ned_h[:, 2], label="-V_z")
-pl.plot(time, q2_log.v_ned_h[:, 0], label="V_x")
-pl.plot(time, q2_log.v_ned_h[:, 1], label="V_y")
-pl.xlabel("Time [s]")
-pl.ylabel("Velocity [m/s]")
-pl.grid()
-pl.legend()
-
-pl.figure(3)
-pl.plot(time, -q3_log.v_ned_h[:, 2], label="-V_z")
-pl.plot(time, q3_log.v_ned_h[:, 0], label="V_x")
-pl.plot(time, q3_log.v_ned_h[:, 1], label="V_y")
-pl.xlabel("Time [s]")
-pl.ylabel("Velocity [m/s]")
-pl.grid()
-pl.legend()
-
-pl.figure(4)
-pl.plot(time, -q4_log.v_ned_h[:, 2], label="-V_z")
-pl.plot(time, q4_log.v_ned_h[:, 0], label="V_x")
-pl.plot(time, q4_log.v_ned_h[:, 1], label="V_y")
-pl.xlabel("Time [s]")
-pl.ylabel("Velocity [m/s]")
-pl.grid()
-pl.legend()
-
-pl.figure(5)
-pl.plot(time, -q5_log.v_ned_h[:, 2], label="-V_z")
-pl.plot(time, q5_log.v_ned_h[:, 0], label="V_x")
-pl.plot(time, q5_log.v_ned_h[:, 1], label="V_y")
-pl.xlabel("Time [s]")
-pl.ylabel("Velocity [m/s]")
-pl.grid()
-pl.legend()
-
-pl.figure(6)
-pl.plot(time, -q6_log.v_ned_h[:, 2], label="-V_z")
-pl.plot(time, q6_log.v_ned_h[:, 0], label="V_x")
-pl.plot(time, q6_log.v_ned_h[:, 1], label="V_y")
-pl.xlabel("Time [s]")
-pl.ylabel("Velocity [m/s]")
-pl.grid()
-pl.legend()
-
 pl.figure(7)
-plt.ylabel('some numbers')
-plt.xlabel('some numbers')
+pl.xlabel('simulation time')
+pl.ylabel('position')
 pl.plot(time, q1_log.xyz_h[:, 0], label="p_x_1")
 pl.plot(time, q1_log.xyz_h[:, 1], label="p_y_1")
 pl.plot(time, q2_log.xyz_h[:, 0], label="p_x_2")
