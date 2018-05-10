@@ -156,8 +156,8 @@ def velavg (current):
 def flocking (current):
 	print "flocking" 
 	flocking_vec=((separation(current)+cohesion(current))+velavg(current))
-	current.set_v_2D_alt_lya(flocking_vec,-8)
-	#return flocking_vec
+	#current.set_v_2D_alt_lya(flocking_vec,-8)
+	return flocking_vec
 def spread (current):
 	print "flocking" 
 	flocking_vec=((separation(current)+-3*cohesion(current))+velavg(current))
@@ -168,7 +168,7 @@ def find_fire (current):
 	if not(current.temperature_sensor==True):
 		 current.set_xyz_ned_lya(current.xyz)
 		 return
-	if (temperature_sensor(current)>800):
+	if (temperature_sensor(current)>600):
 		fire=get_position_by_radius(current)
 		current.shared_variable(fire,"fire")
 		current.set_xyz_ned_lya(current.xyz)

@@ -13,11 +13,13 @@ class StateMachine:
  current=None
  count=1
  flag=None
+ timer=None
  def __init__(self,current):
 	self.states=[]
  	self.current=current
  	self.build()
 	self.flag=False
+	self.timer=[]
  def create_initial_state(self,name, role, action_method,condition):
 	state=State(name,role,action_method,self.current,condition)
 	self.initial_state=state
@@ -50,9 +52,10 @@ class StateMachine:
 		return
 	elif(current_state.next!=None): self.update_state(new_state,current_state.next)
 		
- def execute(self, state):	
+ def execute(self, state,t):	
 	if self.current_state.next!=None  and len(state.drone_id)==state.condition.max_count:
 		 self.current_state=self.current_state.next
+		 self.timer.append(t)
 	state.execute()
  
 			

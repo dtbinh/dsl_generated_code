@@ -155,12 +155,23 @@ for t in time:
     #for d in quad_list:
     #	d.group.syncronize(d,quad_list,radius)
     #   rules.flocking(d)
+    #if t > 100:
+    #	for d in quad_list:
+    #		d.group.syncronize(d,quad_list,radius)
+    #   	rules.spread(d)
      ##############################################TEST 1 SPREADING##############################################################
     #for d in quad_list:
     #	d.group.syncronize(d,quad_list,radius)
     #	rules.spread(d)
     
-
+     ####################################################TEST SEQUENCE###########################################################
+	#for d in quad_list:
+    	#d.group.syncronize(d,quad_list,radius)
+        #rules.flocking(d)
+    	#if t > 120:
+	#	for d in quad_list:
+    	#		d.group.syncronize(d,quad_list,radius)
+        #		rules.spread(d)
     
     for d in quad_list:
     	d.step(dt)

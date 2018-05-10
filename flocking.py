@@ -39,9 +39,9 @@ xyz1_0 = np.array([1.0, 1.2, 0.0])
 xyz2_0 = np.array([2.2, 2.0, 0.0])
 xyz3_0 = np.array([-3.1, 20.6, 0.0])
 
-xyz4_0 = np.array([12.0, 8.2, 0.0])
-xyz5_0 = np.array([10.2, 9.0, 0.0])
-xyz6_0 = np.array([-11.2, 10.6, 0.0])
+xyz4_0 = np.array([32.0, 8.2, 0.0])
+xyz5_0 = np.array([31.2, 9.0, 0.0])
+xyz6_0 = np.array([33.2, 10.6, 0.0])
 v_ned_0 = np.array([0.0, 0.0, 0.0])
 w_0 = np.array([0.0, 0.0, 0.0, 0.0])
 
@@ -85,7 +85,7 @@ tilde_mu = 0e-2*np.array([1, 1, 1])
 fc = form.formation_distance(2, 1, dtriang, mu, tilde_mu, Btriang, 5e-2, 5e-1)
 
 # Simulation parameters
-tf = 250
+tf = 160
 dt = 5e-2
 time = np.linspace(0, tf, tf/dt)
 it = 0
@@ -216,7 +216,7 @@ for t in time:
     #rules.run_simulation(quad_list)
     # Animation
     for current in quad_list:
-    		current.ensemble.synchronize_state(current)
+    		current.ensemble.synchronize_state(current,t)
 	
     
     if it%frames == 0:
@@ -340,32 +340,32 @@ for t in time:
 
 #for vector in q1.group.fire_list:
 #    	print vector.x, " ", vector.y, " "
-print len(q1.group.fire_list), "q1"
+#print len(q1.group.fire_list), "q1"
 
 	
 #for vector in q2.group.fire_list:
 #    	print vector.x, " ", vector.y, " " 
-print len(q2.group.fire_list), "q2"
+#print len(q2.group.fire_list), "q2"
 
     
 #for vector in q3.group.fire_list:
 #    	print vector.x, " ", vector.y, " " 
-print len(q3.group.fire_list), "q3"
+#print len(q3.group.fire_list), "q3"
 
 
 #for vector in q4.group.fire_list:
 #   	print vector.x, " ", vector.y, " " 
-print len(q4.group.fire_list), "q4"
+#print len(q4.group.fire_list), "q4"
 
     
 #for vector in q5.group.fire_list:
 #   	print vector.x, " ", vector.y, " " 
-print len(q5.group.fire_list), "q5"
+#print len(q5.group.fire_list), "q5"
 
 
 #for vector in q6.group.fire_list:
 #   	print vector.x, " ", vector.y, " " 
-print len(q6.group.fire_list), "q6"
+#print len(q6.group.fire_list), "q6"
 
 
 pl.figure(1)
@@ -423,8 +423,13 @@ pl.grid()
 pl.legend()
 
 pl.figure(7)
-plt.ylabel('some numbers')
-plt.xlabel('some numbers')
+
+print l
+for d in quad_list:
+	l = range(len(d.stat_m.timer))
+	pl.vlines( d.stat_m.timer, 0, l, linestyle="dashed")
+	pl.plot(d.stat_m.timer,l,'ro')
+	print d.stat_m.timer, "time............."
 pl.plot(time, q1_log.xyz_h[:, 0], label="p_x_1")
 pl.plot(time, q1_log.xyz_h[:, 1], label="p_y_1")
 pl.plot(time, q2_log.xyz_h[:, 0], label="p_x_2")

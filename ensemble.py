@@ -21,7 +21,7 @@ class Ensemble:
 		self.ensemble.append(drone)	
  def delete_member(self): #delete after timeout
         print "hola"
- def synchronize_state(self,current):
+ def synchronize_state(self,current,t):
 	  n_list=[]
 	  self.register_member(current)
 	  print "synchronizing...........",current.tag
@@ -37,7 +37,7 @@ class Ensemble:
 			current.stat_m.receive_message(drone.stat_m.send_message()) #current receives from everyone in the ensemble
 			drone.stat_m.receive_message(current.stat_m.send_message()) #current sends state to everyone in the ensemble
 	  #if current.role==current.stat_m.send_message().role:
-          current.stat_m.execute(current.stat_m.send_message())
+          current.stat_m.execute(current.stat_m.send_message(),t)
 	  for drone in self.ensemble:	
 	  	if self.get_state_from_other(drone)==True and drone.stat_m.send_message().name==current.stat_m.send_message().name:			
 			count=self.check_others_state(current,drone,current.stat_m.send_message())		
